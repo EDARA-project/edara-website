@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDARA Project</title>
+  <style>
+    :root {
+      --brand-white: #ffffff;
+      --brand-red: #D32028;
+      --brand-blue: #023572;
+      --text-dark: #1f2937;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--brand-white);
+      color: var(--text-dark);
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header Section */
+    header {
+      background-color: var(--brand-white);
+      border-bottom: 4px solid var(--brand-blue);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .logo-container img {
+      max-width: 280px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .project-subtitle {
+      color: var(--brand-blue);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Main Content Section */
+    main {
+      flex: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .overview-card {
+      background-color: var(--brand-white);
+      border-left: 5px solid var(--brand-red);
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 16px rgba(2, 53, 114, 0.08);
+      border-radius: 0 8px 8px 0;
+    }
+
+    h1 {
+      color: var(--brand-blue);
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h1::after {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 3px;
+      background-color: var(--brand-red);
+      margin-left: 0.5rem;
+    }
+
+    .overview-card p {
+      font-size: 1.08rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-dark);
+    }
+
+    .overview-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Footer / EU Disclaimer Section */
+    footer {
+      background-color: var(--bg-light);
+      border-top: 2px solid #e2e8f0;
+      padding: 2.5rem 1.5rem;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .eu-logo {
+      max-width: 240px;
+      height: auto;
+    }
+
+    .disclaimer-text {
+      font-size: 0.95rem;
+      color: #475569;
+      max-width: 680px;
+    }
+
+    .disclaimer-text a {
+      color: var(--brand-blue);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--brand-red);
+      text-underline-offset: 3px;
+    }
+
+    .disclaimer-text a:hover {
+      color: var(--brand-red);
+    }
+
+    /* Responsive layout for wider screens */
+    @media (min-width: 640px) {
+      .footer-content {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="edara-logo.png" alt="EDARA Project Logo">
+    </div>
+    <p class="project-subtitle">Advancing Europe’s Digital Education Transformation with AI-Supported AR Learning</p>
+  </header>
+
+  <main>
+    <section class="overview-card">
+      <h1>Project Overview</h1>
+      <p>
+        The project advances Europe’s digital education transformation by enabling educators to design AR learning supported by AI. EDARA strengthens digital readiness through evidence-based pedagogical innovation, enhances digital resilience through interoperable and inclusive authoring tools, and builds capacity by empowering educators across Europe and Ukraine to become confident creators of immersive learning using European open platforms.
+      </p>
+      <p>
+        EDARA will co-design and validate novel pedagogically-grounded AR authoring approaches together with educators. The project will develop and pilot immersive learning materials, evaluate their pedagogical impact, and deliver teacher training. Workshops, pilots and open training will support knowledge exchange and build a community of practice.
+      </p>
+      <p>
+        EDARA will deliver evidence-based methodological guidelines for educational AR authoring, improve 4 AR authoring platforms, produce and pilot materials, evaluate their pedagogical impact and publish them as OERs.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img class="eu-logo" src="EN_Co-fundedbytheEU_RGB_POS.png" alt="Co-funded by the European Union">
+      <p class="disclaimer-text">
+        The EDARA project has received funding from the European Union’s Erasmus Plus programme, grant agreement 
+        <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/2026-1-NO01-KA220-HED-000462029" target="_blank" rel="noopener noreferrer">2026-1-NO01-KA220-HED-000462029</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
